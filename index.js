@@ -32,7 +32,6 @@ const client = new MongoClient(uri, {
 async function run() {
   try {
     // Connect the client to the server	(optional starting in v4.7)
-    await client.connect();
     const classCollection = client.db("Mystitsu").collection("class");
     const bookedCollection = client.db("Mystitsu").collection("booked");
     const userCollection = client.db("Mystitsu").collection("users");
